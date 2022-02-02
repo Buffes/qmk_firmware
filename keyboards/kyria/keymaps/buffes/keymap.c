@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_COLEMAK] = LAYOUT(
       KC_TAB,  KC_Q,   KC_W,   KC_F,   KC_P,   KC_B,                                         KC_J,    KC_L,    KC_U,    KC_Y,   SE_SCLN, KC_DEL,
       KC_BSPC, KC_A,   KC_R,   KC_S,   KC_T,   KC_G,                                         KC_M,    KC_N,    KC_E,    KC_I,   KC_O,    SE_QUOT,
-      KC_LSFT, KC_Z,   KC_X,   KC_C,   KC_D,   KC_V,   KC_LCTL,   KC_LSFT, KC_LSFT, KC_RCTL, KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,
+      KC_LSFT, KC_Z,   KC_X,   KC_C,   KC_D,   KC_V,   KC_LCTL,   KC_LSFT, KC_LSFT, SE_COLN, KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,
                             KC_LGUI, KC_LALT, MO(_RAISE), KC_SPACE, KC_LCTL, KC_ENT, MT(MOD_LSFT, KC_ENT), MO(_LOWER), KC_ESC, KC_RCTL
     ),
 /*
@@ -63,8 +63,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_LOWER] = LAYOUT(
       _______, SE_DIAE, SE_TILD, SE_DLR,  SE_CIRC, SE_CIRC,                                    _______, KC_HOME, KC_UP,   KC_END, _______, _______,
       _______, SE_PIPE, SE_HASH, SE_LABK, SE_RABK, SE_AT,                                      _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______, _______,
-      _______, SE_PND, SE_EURO, SE_ACUT, SE_GRV, _______, _______, _______, _______, _______, _______, KC_PGUP,  KC_PGDN, _______,  _______, _______,
-                       _______, _______, _______, KC_SPACE, KC_EQL,  KC_EQL,  KC_LSFT, _______, _______, _______
+      KC_LSFT, SE_PND, SE_EURO, SE_ACUT, SE_GRV, _______, _______, _______, _______, _______, _______, KC_PGUP,  KC_PGDN, _______,  _______, _______,
+                       _______, KC_LALT, _______, KC_SPACE, KC_LCTL,  _______,  KC_LSFT, _______, _______, _______
     ),
 /*
  * Raise Layer: Numpad, special keys
@@ -83,8 +83,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_RAISE] = LAYOUT(
       _______, SE_PLUS, KC_7, KC_8, KC_9, _______,                                     SE_QUES, SE_LCBR, SE_RCBR, SE_SLSH, SE_BSLS,    _______,
       _______,  KC_DOT, KC_4, KC_5, KC_6, SE_MINS,                                     SE_ASTR, SE_LPRN, SE_RPRN, SE_EQL, SE_EXLM, _______,
-      _______,    KC_0, KC_1, KC_2, KC_3, SE_PERC, _______, _______, _______, _______, _______, SE_LBRC, SE_RBRC, SE_AMPR, SE_UNDS, _______,
-                      _______, _______, _______, KC_SPACE,  _______, _______, SE_DQUO, KC_LCTL, SE_UNDS, _______
+      KC_LSFT,    KC_0, KC_1, KC_2, KC_3, SE_PERC, _______, _______, _______, _______, _______, SE_LBRC, SE_RBRC, SE_AMPR, SE_UNDS, _______,
+                      _______, KC_LALT, _______, KC_SPACE,  KC_LCTL, _______, SE_DQUO, KC_LCTL, SE_UNDS, _______
     ),
 
 	/*
